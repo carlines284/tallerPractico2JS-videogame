@@ -43,9 +43,12 @@ function setCanvasSize(){
     }else{
         canvasSize=window.innerHeight*0.8;
     }
+    /* canvasSize=Number(canvasSize.toFixed(0)); */
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height',canvasSize);
     elementsSize=canvasSize/10;
+    playerPosition.x=undefined;
+    playerPosition.y=undefined;
     startGame();
 }
 function startGame(){
